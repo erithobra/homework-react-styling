@@ -48,5 +48,7 @@ It will also have a `handleItemUpVote` and `handleItemDownVote` method that will
 
 **Tips:**
 - Use Flexbox
-- [Here is the color palette](https://mycolor.space/?hex=%23000000&sub=1)
 
+<p align="center">
+  <img src="wishAppColors.png"/>
+</p>
