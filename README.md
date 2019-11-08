@@ -49,6 +49,8 @@ It will also have a `handleItemUpVote` and `handleItemDownVote` method that will
 **Tips:**
 - Use Flexbox
 
+##
+
 <p align="center">
   <img src="wishAppColors.png"/>
 </p>
