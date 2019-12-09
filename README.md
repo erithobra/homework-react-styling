@@ -40,8 +40,8 @@ Your job will be to implement the following:
 1. A Footer component
 
 Your App component will have three children: Header, List, and the Footer component.
-The List component will have a child component, the Item component.
-It will also have a `handleItemUpVote` and `handleItemDownVote` method that will be passed down via props to the Item component.
+The List component will have a child component, the Item component that will render the list item along with any votes that the item has gotten.
+It will also have a `handleItemUpVote` and `handleItemDownVote` method that will be passed down via props to the Item component. These methods will increase or decrease the votes for the list item which should dynamically update as you click up and down.
 
 **Required**
 - Your app should resemble the mockup as closely as possible.
