@@ -43,6 +43,9 @@ Your App component will have three children: Header, List, and the Footer compon
 The List component will have a child component, the Item component that will render the list item along with any votes that the item has gotten.
 It will also have a `handleItemUpVote` and `handleItemDownVote` method that will be passed down via props to the Item component. These methods will increase or decrease the votes for the list item which should dynamically update as you click up and down.
 
+**Bonus**
+If you finish rather quickly add in a homepage component and a blog component and use Link and Route from react-router-dom to dynamically render the components depending on what url the user navigates to!
+
 **Required**
 - Your app should resemble the mockup as closely as possible.
 
