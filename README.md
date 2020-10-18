@@ -1,7 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  SOFTWARE ENGINEERING IMMERSIVE
 
 1. Fork
-1. Feature
 1. Clone
 1. Pull Request
 
@@ -38,13 +37,18 @@ Your job will be to implement the following:
 1. A List component
 1. An Item component
 1. A Footer component
+1. A Blog component
 
 Your App component will have three children: Header, List, and the Footer component.
 The List component will have a child component, the Item component that will render the list item along with any votes that the item has gotten.
+
 It will also have a `handleItemUpVote` and `handleItemDownVote` method that will be passed down via props to the Item component. These methods will increase or decrease the votes for the list item which should dynamically update as you click up and down.
 
-**Bonus**
-If you finish rather quickly add in a homepage component and a blog component and use Link and Route from react-router-dom to dynamically render the components depending on what url the user navigates to!
+Add in a Blog component and use Link and Route from react-router-dom to dynamically render the Blog component or the List components depending on what url the user navigates to!
+
+**Bonus**Give the user the ability to create blog posts and dynamically render them on the page.
+**Bonus**Give the user the ability to add List items
+**Super Bonus**Add in user authentication (mocked) and have in state different user objects with associated list / blog items and render them depending on which user is 'logged' in.
 
 **Required**
 - Your app should resemble the mockup as closely as possible.
