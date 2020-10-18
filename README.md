@@ -54,7 +54,8 @@ Add in a Blog component and use Link and Route from react-router-dom to dynamica
 
 
 **Required**
-- Your app should resemble the mockup as closely as possible.
+- You should use Styled Components in at least one component
+- It's highly recommended that you test out a react styling framework
 
 **Tips:**
 - Use Flexbox
