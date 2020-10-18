@@ -46,11 +46,11 @@ It will also have a `handleItemUpVote` and `handleItemDownVote` method that will
 
 Add in a Blog component and use Link and Route from react-router-dom to dynamically render the Blog component or the List components depending on what url the user navigates to!
 
-**Bonus**Give the user the ability to create blog posts and dynamically render them on the page.
+**Bonus One:** Give the user the ability to add List items
 
-**Bonus**Give the user the ability to add List items
+**Bonus Two:** Give the user the ability to create blog posts and dynamically render them on the page.
 
-**Super Bonus**Add in user authentication (mocked) and have in state different user objects with associated list / blog items and render them depending on which user is 'logged' in.
+**Super Bonus** Add in user authentication (mocked) and have in state different user objects with associated list / blog items and render them depending on which user is 'logged' in.
 
 
 **Required**
