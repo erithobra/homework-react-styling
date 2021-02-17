@@ -13,27 +13,43 @@ class List extends Component {
             items: [
                 {
                     name: "Apple iPad Mini",
-                    upVote: "1",
-                    downVote: "1"
+                    vote: 0,
                 },
                 {
                     name: "Vespa Scooter",
-                    upVote: "1",
-                    downVote: "1"
+                    vote: 0,
                 },
                 {
                     name: "Shake Shack Milkshake",
-                    upVote: "1",
-                    downVote: "1"
+                    vote: 0,
                 },
                 {
                     name: "12oz Stumptown Coffee",
-                    upVote: "1",
-                    downVote: "1"
+                    vote: 0,
                 }
             ]
         }
     }
+
+
+    vote = (num, index) => {
+        if(this.state.items[index].vote + num >= 0) {
+            const votes = this.state.items[index].vote + num;
+            const items = this.state.items;
+            // this.state.post.likes = votes;
+            items[index].vote = votes;
+            this.setState({
+            items: items,
+            error: null
+        })
+        } else {
+            this.setState({  // setState triggers a re-render
+                error: "Can't vote below zero!"
+            })
+        }
+      }
+
+
 
     render() {
         const List = styled.div`
@@ -52,11 +68,12 @@ class List extends Component {
             align-items: center;
             margin: 30px auto 5px auto;
             box-shadow: 3px 4px 2px 2px lightgray;
+            color: #472628;
         `
         return (
             <List>
                 <H1>Your List</H1>
-                <Item items = {this.state.items} />
+                <Item items = {this.state.items} vote={this.vote} error={this.state.error}/>
             </List>
         )
     }

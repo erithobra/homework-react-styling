@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+
 class Item extends Component {
     render () {
         const UL = styled.div`
@@ -14,29 +15,33 @@ class Item extends Component {
             margin: 10px auto;
             padding: 20px;
             box-shadow: 3px 4px 2px 2px lightgray;
+            
         `
         const ItemName = styled.a`
-
+        color: #472628;
         `
         const Vote = styled.div`
-
+        color: #C37842;
+        display: flex;
         `
         const UpVote = styled.a`
-
+        color: #C37842;
         `
         const DownVote = styled.a`
-
+        color: #C37842;
         `
 
         return (
             <UL>
-                {this.props.items.map((item) => {
+                {this.props.items.map((item, index) => {
+                    console.log(index);
                     return (
                         <Div>
                             <ItemName>{item.name}</ItemName>
                             <Vote>
-                                <UpVote>{item.upVote}</UpVote> | 
-                                <DownVote> {item.downVote}</DownVote>
+                                <UpVote onClick = {() => this.props.vote(1, index)}>Up<br /></UpVote> | 
+                                <DownVote onClick = {() => this.props.vote(-1, index)}> Down<br/></DownVote>
+                                <a>({item.vote})</a>
                             </Vote>
                         </Div>
                     )
