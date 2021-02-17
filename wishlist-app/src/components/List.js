@@ -39,14 +39,10 @@ class List extends Component {
             // this.state.post.likes = votes;
             items[index].vote = votes;
             this.setState({
-            items: items,
-            error: null
-        })
-        } else {
-            this.setState({  // setState triggers a re-render
-                error: "Can't vote below zero!"
+                items: items,
+                error: null
             })
-        }
+        } 
       }
 
 
@@ -73,7 +69,7 @@ class List extends Component {
         return (
             <List>
                 <H1>Your List</H1>
-                <Item items = {this.state.items} vote={this.vote} error={this.state.error}/>
+                <Item items = {this.state.items} vote={this.vote} />
             </List>
         )
     }

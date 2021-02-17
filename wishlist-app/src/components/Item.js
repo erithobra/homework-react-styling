@@ -19,22 +19,31 @@ class Item extends Component {
         `
         const ItemName = styled.a`
         color: #472628;
+        font-weight: 700;
         `
         const Vote = styled.div`
         color: #C37842;
         display: flex;
+        font-weight: 700;
         `
         const UpVote = styled.a`
         color: #C37842;
+        font-weight: 700;
+        &:hover {
+            cursor: pointer;
+        }
         `
         const DownVote = styled.a`
         color: #C37842;
+        font-weight: 700;
+        &:hover {
+            cursor: pointer;
+        }
         `
 
         return (
             <UL>
                 {this.props.items.map((item, index) => {
-                    console.log(index);
                     return (
                         <Div>
                             <ItemName>{item.name}</ItemName>
