@@ -8,6 +8,7 @@ function Header() {
         justify-content: space-between;
         align-items: center;
         padding-left: 10px;
+        box-shadow: 0px 4px 0px 0px lightgray;
     `
 
     const H1 = styled.h1`
